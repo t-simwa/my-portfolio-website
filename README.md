@@ -47,11 +47,11 @@ A modern, VS Code-inspired portfolio website built with Next.js and TypeScript. 
    ```
 
 4. Start the development server:
-   ```bash
-   npm run dev
-   # or
+```bash
+npm run dev
+# or
    pnpm dev
-   ```
+```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 

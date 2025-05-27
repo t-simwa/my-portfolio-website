@@ -27,6 +27,11 @@ const explorerItems = [
     icon: '/logos/js_icon.svg',
   },
   {
+    name: 'skills.py',
+    path: '/skills',
+    icon: '/logos/python.svg',
+  },
+  {
     name: 'articles.json',
     path: '/articles',
     icon: '/logos/json_icon.svg',
