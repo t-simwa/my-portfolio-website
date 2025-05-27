@@ -15,6 +15,11 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  category: 'web' | 'mobile' | 'backend' | 'frontend';
+  technologies: string[];
+  features: string[];
+  github?: string;
+  demo?: string;
 }
 
 export interface Repo {
