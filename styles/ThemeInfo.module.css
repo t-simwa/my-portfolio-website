@@ -59,6 +59,11 @@
   font-size: 0.8rem;
 }
 
+.info button:hover {
+  background: var(--accent-color-secondary);
+  color: var(--button-text);
+}
+
 .info button:focus {
   outline: 1px solid var(--accent-color);
 }

@@ -92,7 +92,7 @@
 }
 
 .link:hover {
-  background: var(--accent-color);
+  background: var(--accent-color-secondary);
   color: var(--bg-color);
 }
 

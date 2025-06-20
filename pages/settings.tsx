@@ -7,40 +7,16 @@ const SettingsPage = () => {
     <div className={styles.layout}>
       <div className={styles.container}>
         <ThemeInfo
-          name="GitHub Dark"
-          icon="/themes/github-dark.png"
-          publisher="GitHub"
-          theme="github-dark"
+          name="Kenya"
+          icon="/themes/kenya.png"
+          publisher="Inspired by Kenyan Flag"
+          theme="kenya"
         />
         <ThemeInfo
-          name="Dracula"
-          icon="/themes/dracula.png"
-          publisher="Dracula Theme"
-          theme="dracula"
-        />
-        <ThemeInfo
-          name="Ayu Dark"
-          icon="/themes/ayu.png"
-          publisher="teabyii"
-          theme="ayu-dark"
-        />
-        <ThemeInfo
-          name="Ayu Mirage"
-          icon="/themes/ayu.png"
-          publisher="teabyii"
-          theme="ayu-mirage"
-        />
-        <ThemeInfo
-          name="Nord"
-          icon="/themes/nord.png"
-          publisher="arcticicestudio"
-          theme="nord"
-        />
-        <ThemeInfo
-          name="Night Owl"
-          icon="/themes/night-owl.png"
-          publisher="sarah.drasner"
-          theme="night-owl"
+          name="Uganda"
+          icon="/themes/uganda.png"
+          publisher="Inspired by Ugandan Flag"
+          theme="uganda"
         />
       </div>
     </div>

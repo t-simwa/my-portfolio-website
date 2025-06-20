@@ -153,3 +153,79 @@
   --scrollbar-thumb-bg: #043254;
   --article-bg: #031d33;
 }
+
+/* Kenya (Improved) */
+[data-theme='kenya'] {
+  --main-bg: linear-gradient(135deg, #000000 0%, #222 100%); /* Subtle gradient for depth */
+  --bg-text: #232323;
+  --text-color: #fff;
+  --accent-color: #bc0000; /* Red for primary accents */
+  --accent-color-secondary: #006600; /* Green for secondary accents */
+  --titlebar-bg: #000000;
+  --sidebar-bg: #000000;
+  --sidebar-hover-bg: #bc0000; /* Green on hover */
+  --explorer-bg: #1a1a1a;
+  --explorer-hover-bg: #bc0000;
+  --explorer-border: #bc0000;
+  --tabs-bg: #000000;
+  --tab-bg: #232323;
+  --tab-active-bg: #1a1a1a;
+  --tab-border: #bc0000;
+  --bottombar-bg: #000000;
+  --bottombar-border: #bc0000;
+  --button-bg: #bc0000; /* Green buttons */
+  --button-text: #000000;
+  --bottombar-hover-bg: #006600; /* Red on hover */
+  --scrollbar-track-bg: #000000;
+  --scrollbar-thumb-bg: #bc0000;
+  --article-bg: #1a1a1a;
+  /* Syntax highlighting for Kenya */
+  --syntax-function: #bc0000;
+  --syntax-variable: #22b122;
+  --syntax-array: #bc0000;
+  --syntax-item:  #22b122;
+  --syntax-return: #bc0000;
+  --syntax-call:  #22b122;
+  --syntax-close: #808080;
+  --syntax-object: #bc0000;
+  --syntax-comment: #6a9955;
+  /* Optional: add a faint beadwork pattern as a background image */
+  /* --main-bg: url('/themes/kenya-beadwork.svg'), linear-gradient(135deg, #181818 0%, #222 100%); */
+}
+
+/* Uganda (Inspired by Ugandan Flag, updated colors) */
+[data-theme='uganda'] {
+  --main-bg: linear-gradient(135deg, #000000 0%, #222 100%); /* Only dark gradient globally */
+  --bg-text: #232323;
+  --text-color: #fff;
+  --accent-color: #FCDD00; /* Yellow for primary accents */
+  --accent-color-secondary: #DA0000; /* Red for secondary accents */
+  --titlebar-bg: #000000;
+  --sidebar-bg: #000000;
+  --sidebar-hover-bg: #FCDD00; /* Yellow on hover */
+  --explorer-bg: #1a1a1a;
+  --explorer-hover-bg: #DA0000; /* Red on hover */
+  --explorer-border: #FCDD00;
+  --tabs-bg: #000000;
+  --tab-bg: #232323;
+  --tab-active-bg: #1a1a1a;
+  --tab-border: #DA0000;
+  --bottombar-bg: #000000;
+  --bottombar-border: #FCDD00;
+  --button-bg: #FCDD00; /* Yellow buttons */
+  --button-text: #000000; /* Pure black for maximum contrast */
+  --bottombar-hover-bg: #DA0000; /* Red on hover */
+  --scrollbar-track-bg: #000000;
+  --scrollbar-thumb-bg: #DA0000;
+  --article-bg: #1a1a1a;
+  /* Syntax highlighting for Uganda */
+  --syntax-function: #FCDD00;
+  --syntax-variable: #DA0000;
+  --syntax-array: #FCDD00;
+  --syntax-item: #DA0000;
+  --syntax-return: #FCDD00;
+  --syntax-call: #DA0000;
+  --syntax-close: #808080;
+  --syntax-object: #FCDD00;
+  --syntax-comment: #6a9955;
+}

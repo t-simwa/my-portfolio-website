@@ -54,6 +54,16 @@
   background: var(--explorer-hover-bg);
 }
 
+[data-theme='uganda'] .file:hover {
+  background: var(--accent-color);
+  color: var(--button-text);
+}
+
+[data-theme='kenya'] .file:hover {
+  background: var(--accent-color);
+  color: var(--button-text);
+}
+
 .chevron {
   transition: transform 0.2s;
 }

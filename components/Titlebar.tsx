@@ -1,6 +1,6 @@
 import Image from 'next/image';
-
 import styles from '@/styles/Titlebar.module.css';
+import ThemeShuttle from './ThemeShuttle';
 
 const Titlebar = () => {
   return (
@@ -22,6 +22,7 @@ const Titlebar = () => {
         <p>Help</p>
       </div>
       <p className={styles.title}>Ted Simwa - Portfolio</p>
+      <ThemeShuttle />
       <div className={styles.windowButtons}>
         <span className={styles.minimize}></span>
         <span className={styles.maximize}></span>

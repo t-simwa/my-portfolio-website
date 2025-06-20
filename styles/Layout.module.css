@@ -3,12 +3,14 @@
 .main {
   display: flex;
   background: var(--main-bg);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 
 .content {
   padding: 2rem;
   color: var(--text-color);
+  background: var(--main-bg);
   font-family: 'JetBrains Mono', monospace;
   flex: 1;
   min-height: 85vh;

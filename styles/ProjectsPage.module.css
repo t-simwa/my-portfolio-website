@@ -49,13 +49,13 @@
 }
 
 .categoryButton:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: var(--accent-color-secondary);
+  color: var(--accent-color-secondary);
 }
 
 .categoryButton.active {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  background: var(--accent-color-secondary);
+  border-color: var(--accent-color-secondary);
   color: var(--bg-color);
 }
 
