@@ -8,7 +8,7 @@ const AboutPage = () => {
         <div className={styles.header}>
           <div className={styles.profileImage}>
             <Image
-              src="/about/profile-picture.jpg"
+              src="/about/profile-picture.JPG"
               alt="Ted Simwa"
               width={200}
               height={200}

@@ -9,7 +9,7 @@
 .shuttleText {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-right: 0.5rem;
 }
 
@@ -99,6 +99,6 @@
 }
 
 .dropdownLabel {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.97rem;
 } 
