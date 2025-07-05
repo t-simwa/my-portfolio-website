@@ -16,7 +16,8 @@ export default function HomePage() {
     { code: '  const developerInfo = {', type: 'variable' },
     { code: "    name: 'Ted Simwa',", type: 'array-item' },
     { code: "    role: 'Full Stack Developer',", type: 'array-item' },
-    { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
+    { code: "    subtitle: 'Crafting Digital Excellence',", type: 'array-item' },
+    { code: "    location: 'Ongata Rongai, Kenya',", type: 'array-item' },
     { code: '  };', type: 'array-end' },
     { code: '', type: 'blank' },
     { code: '  useEffect(() => {', type: 'nested-function' },
@@ -31,6 +32,7 @@ export default function HomePage() {
     { code: '    <main className="hero-container">', type: 'object-method' },
     { code: '      <h1>{developerInfo.name}</h1>', type: 'object-method' },
     { code: '      <p>{developerInfo.role}</p>', type: 'object-method' },
+    { code: '      <p>{developerInfo.subtitle}</p>', type: 'object-method' },
     { code: '      <div className="cta">', type: 'object-method' },
     {
       code: '        <Link href="/projects">View Projects</Link>',
@@ -97,8 +99,10 @@ export default function HomePage() {
           <div className={styles.developerRole}>Full Stack Developer</div>
 
           <p className={styles.bio}>
-            I build elegant, responsive web applications with modern
-            technologies. Focused on clean code and intuitive user experiences.
+            Full-stack developer with expertise in enterprise-grade applications, 
+            cloud infrastructure, and modern web solutions. Delivered cutting-edge 
+            applications using Next.js, React, Node.js, and AWS. Passionate about 
+            clean code, scalable architecture, and innovative problem-solving.
           </p>
 
           <div className={styles.actionLinks}>

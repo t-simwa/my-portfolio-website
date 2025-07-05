@@ -9,10 +9,8 @@ import '@/styles/themes.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
+    const theme = localStorage.getItem('theme') || 'kenya';
+    document.documentElement.setAttribute('data-theme', theme);
   }, []);
 
   return (
