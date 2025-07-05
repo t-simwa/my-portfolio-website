@@ -8,17 +8,16 @@
 .container {
   margin: 2rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 .pageTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent-color);
   margin-bottom: 1rem;
   letter-spacing: -0.03em;
-  line-height: 1.2;
 }
 
 .pageSubtitle {
@@ -66,7 +65,7 @@
   }
 
   .pageTitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .pageSubtitle {

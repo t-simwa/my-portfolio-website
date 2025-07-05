@@ -4,14 +4,15 @@ import { projects } from '@/data/projects';
 
 import styles from '@/styles/ProjectsPage.module.css';
 
-type Category = 'all' | 'web' | 'mobile' | 'backend' | 'frontend';
+type Category = 'all' | 'sites' | 'web' | 'mobile' | 'ai' | 'cloud';
 
 const categories: { id: Category; label: string }[] = [
   { id: 'all', label: 'All Projects' },
-  { id: 'web', label: 'Web Applications' },
+  { id: 'sites', label: 'Websites' },
+  { id: 'web', label: 'Web Apps' },
   { id: 'mobile', label: 'Mobile Apps' },
-  { id: 'backend', label: 'APIs & Backend' },
-  { id: 'frontend', label: 'Frontend Showcases' },
+  { id: 'ai', label: 'AI & Data' },
+  { id: 'cloud', label: 'Cloud & DevOps' },
 ];
 
 const ProjectsPage = () => {
@@ -25,8 +26,7 @@ const ProjectsPage = () => {
     <div className={styles.layout}>
       <h1 className={styles.pageTitle}>My Projects</h1>
       <p className={styles.pageSubtitle}>
-        A showcase of my technical expertise through various projects. Each project demonstrates
-        different aspects of software development, from frontend design to backend architecture.
+        Explore a curated selection of my real-world projects, including modern websites, web apps, cloud-native platforms, AI/data solutions, mobile apps, and this portfolio. Each project demonstrates hands-on expertise with current technologies and practical business impact.
       </p>
 
       <div className={styles.categories}>

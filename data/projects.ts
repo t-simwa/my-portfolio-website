@@ -2,9 +2,10 @@ export interface Project {
   title: string;
   description: string;
   logo: string;
+  image: string;
   link: string;
   slug: string;
-  category: 'web' | 'mobile' | 'backend' | 'frontend';
+  category: 'sites' | 'web' | 'mobile' | 'ai' | 'cloud';
   technologies: string[];
   features: string[];
   github?: string;
@@ -13,147 +14,155 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'AI-Powered Code Review Assistant',
-    description: 'An intelligent code review system that uses machine learning to analyze code quality, suggest improvements, and detect potential bugs before they reach production.',
-    logo: '/logos/ai.svg',
-    link: 'https://github.com/yourusername/ai-code-review',
-    slug: 'ai-code-review',
-    category: 'backend',
-    technologies: ['Python', 'TensorFlow', 'FastAPI', 'PostgreSQL', 'Docker'],
+    title: 'Simca Cleaning Website',
+    description: 'A responsive website for Simca Cleaning Company, a Nairobi-based SME, featuring service listings, booking forms, client testimonials, and an interactive map for service areas, designed to increase client inquiries and streamline bookings.',
+    logo: '/logos/cleaning.svg',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/simca-cleaning',
+    slug: 'simca-cleaning',
+    category: 'sites',
+    technologies: ['Next.js 15.2.4', 'React 19', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'React Hook Form', 'Zod', 'Framer Motion', 'Leaflet', 'Recharts', 'Next Themes'],
     features: [
-      'Real-time code analysis',
-      'Automated bug detection',
-      'Code quality scoring',
-      'Integration with GitHub/GitLab',
-      'Customizable review rules'
+      'Responsive design for all devices',
+      'Interactive service area mapping',
+      'Online booking system',
+      'Client testimonials showcase',
+      'Service listings with detailed information',
+      'Dark/light theme support'
     ],
-    github: 'https://github.com/yourusername/ai-code-review',
-    demo: 'https://ai-code-review-demo.com'
+    github: 'https://github.com/yourusername/simca-cleaning',
+    demo: 'https://simca-cleaning.com'
   },
   {
-    title: 'Real-time Collaborative IDE',
-    description: 'A browser-based IDE that enables real-time collaboration between developers, featuring live code sharing, pair programming, and integrated chat.',
-    logo: '/logos/ide.svg',
-    link: 'https://github.com/yourusername/collab-ide',
-    slug: 'collab-ide',
-    category: 'web',
-    technologies: ['TypeScript', 'React', 'WebSocket', 'Monaco Editor', 'Node.js'],
-    features: [
-      'Real-time code synchronization',
-      'Multiple cursor support',
-      'Integrated chat system',
-      'File tree management',
-      'Git integration'
+    title: 'My Portfolio Website',
+    description: 'A personal portfolio website built with Next.js and TypeScript to showcase my projects, skills, and experience. Features a modern UI, responsive design, and dynamic project filtering.',
+    logo: '/logos/portfolio.svg',
+    image: '/images/projects/portfolio-site-preview.png',
+    link: 'https://github.com/yourusername/my-portfolio-website',
+    slug: 'portfolio-website',
+    category: 'sites',
+    technologies: [
+      'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Framer Motion', 'Vercel', 'GitHub Actions'
     ],
-    github: 'https://github.com/yourusername/collab-ide',
-    demo: 'https://collab-ide-demo.com'
+    features: [
+      'Modern responsive UI',
+      'Dynamic project filtering',
+      'Dark/light theme support',
+      'SEO optimized',
+      'Deployed on Vercel',
+      'Open source'
+    ],
+    github: 'https://github.com/yourusername/my-portfolio-website',
+    demo: 'https://your-portfolio-demo.com'
   },
   {
-    title: 'Smart Home Automation Platform',
-    description: 'A comprehensive IoT platform for home automation that learns user patterns and optimizes energy consumption while providing seamless device control.',
-    logo: '/logos/smart-home.svg',
-    link: 'https://github.com/yourusername/smart-home-platform',
-    slug: 'smart-home-platform',
-    category: 'mobile',
-    technologies: ['React Native', 'Node.js', 'MQTT', 'MongoDB', 'TensorFlow Lite'],
-    features: [
-      'AI-powered automation',
-      'Energy usage optimization',
-      'Cross-platform mobile app',
-      'Voice control integration',
-      'Real-time device monitoring'
-    ],
-    github: 'https://github.com/yourusername/smart-home-platform',
-    demo: 'https://smart-home-demo.com'
-  },
-  {
-    title: 'Advanced E-commerce Platform',
-    description: 'A high-performance e-commerce platform with real-time inventory management, advanced search, and personalized recommendations.',
+    title: ' ShopHub E-Commerce Platform',
+    description: 'A full-stack e-commerce platform for small businesses with real-time inventory tracking, payment processing, and analytics dashboard.',
     logo: '/logos/ecommerce.svg',
-    link: 'https://github.com/yourusername/advanced-ecommerce',
-    slug: 'advanced-ecommerce',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/ecommerce-platform',
+    slug: 'ecommerce-platform',
     category: 'web',
-    technologies: ['Next.js', 'GraphQL', 'Redis', 'PostgreSQL', 'Elasticsearch'],
+    technologies: ['React.js 18+', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'Socket.io-client', 'Node.js', 'Express.js', 'MongoDB', 'Redis', 'AWS', 'Docker', 'JWT'],
     features: [
       'Real-time inventory tracking',
-      'Advanced search with filters',
-      'Personalized recommendations',
-      'Multi-currency support',
-      'Analytics dashboard'
+      'Payment processing integration',
+      'Analytics dashboard',
+      'User authentication & authorization',
+      'Responsive design',
+      'Docker containerization'
     ],
-    github: 'https://github.com/yourusername/advanced-ecommerce',
-    demo: 'https://ecommerce-demo.com'
+    github: 'https://github.com/yourusername/ecommerce-platform',
+    demo: 'https://ecommerce-platform-demo.com'
   },
   {
-    title: 'Distributed Task Queue System',
-    description: 'A scalable distributed task queue system for handling background jobs, with real-time monitoring and automatic scaling capabilities.',
-    logo: '/logos/queue.svg',
-    link: 'https://github.com/yourusername/distributed-queue',
-    slug: 'distributed-queue',
-    category: 'backend',
-    technologies: ['Go', 'Redis', 'gRPC', 'Kubernetes', 'Prometheus'],
+    title: 'M-Pesa Payment Gateway Dashboard',
+    description: 'A web app for Kenyan SMEs to manage M-Pesa payments, track transactions, and generate financial reports, integrating with Safaricom\'s M-Pesa API.',
+    logo: '/logos/mpesa.svg',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/mpesa-dashboard',
+    slug: 'mpesa-dashboard',
+    category: 'web',
+    technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Redis', 'Vercel', 'Render', 'GitHub Actions', 'Jest', 'Supertest', 'React Testing Library', 'JWT', 'bcrypt', 'helmet', 'rate-limiting'],
     features: [
-      'Horizontal scaling',
-      'Priority queues',
-      'Dead letter queues',
-      'Real-time monitoring',
-      'Automatic failover'
+      'M-Pesa API integration',
+      'Transaction tracking and management',
+      'Financial reporting dashboard',
+      'SME-focused payment solutions',
+      'Secure authentication system',
+      'Real-time transaction monitoring'
     ],
-    github: 'https://github.com/yourusername/distributed-queue',
-    demo: 'https://queue-system-demo.com'
+    github: 'https://github.com/yourusername/mpesa-dashboard',
+    demo: 'https://mpesa-dashboard-demo.com'
   },
   {
-    title: 'Interactive Data Visualization Dashboard',
-    description: 'A powerful data visualization platform that transforms complex datasets into interactive, insightful visualizations with real-time updates.',
-    logo: '/logos/dashboard.svg',
-    link: 'https://github.com/yourusername/data-viz-dashboard',
-    slug: 'data-viz-dashboard',
-    category: 'frontend',
-    technologies: ['React', 'D3.js', 'TypeScript', 'WebSocket', 'Tailwind CSS'],
+    title: 'Cloud-Native Task Manager',
+    description: 'A collaborative task management app deployed on Kubernetes, with real-time updates, role-based access, and analytics for remote teams.',
+    logo: '/logos/task-manager.svg',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/cloud-task-manager',
+    slug: 'cloud-task-manager',
+    category: 'cloud',
+    technologies: [
+      'React.js', 'TypeScript', 'Chakra UI', 'Redux Toolkit', 'Socket.io-client',
+      'Node.js', 'Express.js', 'PostgreSQL', 'Redis',
+      'Kubernetes', 'Docker', 'AWS EKS', 'GitHub Actions', 'Vercel',
+      'Jest', 'Mocha', 'React Testing Library', 'OAuth2', 'helmet', 'rate-limiting'
+    ],
     features: [
-      'Real-time data updates',
-      'Custom visualization types',
-      'Interactive filtering',
-      'Export capabilities',
-      'Responsive design'
+      'Real-time collaborative updates',
+      'Role-based access control',
+      'Analytics dashboard',
+      'Remote team support',
+      'Kubernetes deployment',
+      'OAuth2 authentication'
     ],
-    github: 'https://github.com/yourusername/data-viz-dashboard',
-    demo: 'https://data-viz-demo.com'
+    github: 'https://github.com/yourusername/cloud-task-manager',
+    demo: 'https://cloud-task-manager-demo.com'
   },
   {
-    title: 'Cross-platform Mobile App Framework',
-    description: 'A custom mobile app framework that enables building high-performance native apps with a single codebase, featuring advanced animations and native modules.',
-    logo: '/logos/mobile.svg',
-    link: 'https://github.com/yourusername/mobile-framework',
-    slug: 'mobile-framework',
+    title: 'AI-Powered AgriTech App',
+    description: 'A web and mobile app for Kenyan farmers to access AI-driven crop advice, market prices, and weather forecasts, integrating with local APIs.',
+    logo: '/logos/agritech.svg',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/agritech-app',
+    slug: 'agritech-app',
+    category: 'ai',
+    technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'Python', 'FastAPI', 'MongoDB', 'Redis', 'React Native', 'TensorFlow.js', 'Hugging Face API', 'Vercel', 'Render', 'GitHub Actions', 'Pytest', 'Jest', 'React Testing Library', 'JWT', 'bcrypt', 'helmet'],
+    features: [
+      'AI-driven crop advice',
+      'Real-time market prices',
+      'Weather forecasts integration',
+      'Cross-platform mobile app',
+      'Local API integration',
+      'Machine learning predictions'
+    ],
+    github: 'https://github.com/yourusername/agritech-app',
+    demo: 'https://agritech-app-demo.com'
+  },
+  {
+    title: 'SME Inventory System',
+    description: 'A mobile-first inventory management app for Kenyan SMEs, with barcode scanning, stock alerts, and sales tracking.',
+    logo: '/logos/inventory.svg',
+    image: '/images/projects/simca-cleaning-preview.png',
+    link: 'https://github.com/yourusername/sme-inventory',
+    slug: 'sme-inventory',
     category: 'mobile',
-    technologies: ['TypeScript', 'React Native', 'Swift', 'Kotlin', 'C++'],
-    features: [
-      'Native performance',
-      'Custom animations',
-      'Platform-specific modules',
-      'Hot reloading',
-      'Built-in testing'
+    technologies: [
+      'React.js', 'TypeScript', 'Material-UI', 'Redux Toolkit',
+      'Node.js', 'Express.js', 'MongoDB', 'Redis',
+      'React Native', 'Vercel', 'Render', 'GitHub Actions',
+      'Jest', 'Supertest', 'React Testing Library'
     ],
-    github: 'https://github.com/yourusername/mobile-framework',
-    demo: 'https://mobile-framework-demo.com'
+    features: [
+      'Barcode scanning',
+      'Stock alerts',
+      'Sales tracking',
+      'Mobile-first design',
+      'Cloud sync',
+      'Role-based access control'
+    ],
+    github: 'https://github.com/yourusername/sme-inventory',
+    demo: 'https://sme-inventory-demo.com'
   },
-  {
-    title: 'Microservices Architecture Template',
-    description: 'A production-ready microservices template with built-in service discovery, load balancing, and monitoring capabilities.',
-    logo: '/logos/microservices.svg',
-    link: 'https://github.com/yourusername/microservices-template',
-    slug: 'microservices-template',
-    category: 'backend',
-    technologies: ['Node.js', 'Docker', 'Kubernetes', 'gRPC', 'Prometheus'],
-    features: [
-      'Service discovery',
-      'Load balancing',
-      'Circuit breaking',
-      'Distributed tracing',
-      'Health monitoring'
-    ],
-    github: 'https://github.com/yourusername/microservices-template',
-    demo: 'https://microservices-demo.com'
-  }
 ];

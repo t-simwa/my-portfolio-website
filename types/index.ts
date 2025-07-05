@@ -13,9 +13,10 @@ export interface Project {
   title: string;
   description: string;
   logo: string;
+  image: string;
   link: string;
   slug: string;
-  category: 'web' | 'mobile' | 'backend' | 'frontend';
+  category: 'sites' | 'web' | 'mobile' | 'ai' | 'cloud';
   technologies: string[];
   features: string[];
   github?: string;

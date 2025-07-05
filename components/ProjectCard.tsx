@@ -15,6 +15,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className={styles.header}>
           <h3 className={styles.title}>{project.title}</h3>
         </div>
+        {project.image && (
+          <img
+            src={project.image}
+            alt={project.title + ' preview'}
+            className={styles.previewImage}
+          />
+        )}
         
         <p className={styles.description}>{project.description}</p>
 
